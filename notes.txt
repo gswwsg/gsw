@@ -1,0 +1,7 @@
+git config --global user.name ""
+git config --global user.email "@outlook.com"
+
+git config --list
+git remote add origin
+git clone <>
+git push -u origin master
