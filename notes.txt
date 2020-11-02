@@ -5,3 +5,14 @@ git config --list
 git remote add origin
 git clone <>
 git push -u origin master
+
+git credential reject
+protocol=https
+host=github.com
+<empty line here>
+and then to set the new username & password:
+
+git credential fill
+protocol=https
+host=github.com
+<empty line here>
