@@ -16,3 +16,10 @@ git credential fill
 protocol=https
 host=github.com
 <empty line here>
+
+
+
+/* npm install --save vuex@next */
+
+
+npm install vue-multiselect --save
