@@ -14,6 +14,8 @@
         </div>
        <base-dropdown id="bots" list="bots">
           <label for="selectedBot">Select a bot</label>
+          <base-dropdown-content>
+          </base-dropdown-content>
        </base-dropdown> 
         <div class="form-control">
           <label for="selectedHost">Select a Host</label>

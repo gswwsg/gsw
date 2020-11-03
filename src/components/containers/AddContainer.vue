@@ -1,4 +1,5 @@
 <template>
+<div>
   <base-dialog v-if="inputIsInvalid" title="Invalid Input" @close="confirmError">
     <template v-slot:default>
       <p>Unfortunately at least one input value is invalid</p>
@@ -31,6 +32,7 @@
       </div>
     </form>
   </base-card>
+</div>
 </template>
 
 <script>

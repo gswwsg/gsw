@@ -1,6 +1,9 @@
 <template>
-
-   <options v-for="bot in regbots"
-    value="1">1</options>
-</select>
+<option >{{ value }}</option>
 </template>
+
+<script>
+export default {
+       props: ['id', 'value'],
+}
+</script>

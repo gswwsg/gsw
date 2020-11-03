@@ -11,7 +11,7 @@ const app = createApp(App);
 
 app.component('base-dropdown', BaseDropdown);
 app.component('base-dropdown-content', BaseDropdownContent);
-app.component('base-dropdown-item', BaseDropdownContent);
+app.component('base-dropdown-item', BaseDropdownItem);
 app.component('base-button', BaseButton);
 app.component('base-dialog', BaseDialog);
 app.component('base-card', BaseCard);
