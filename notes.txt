@@ -23,3 +23,7 @@ host=github.com
 
 
 npm install vue-multiselect --save
+
+git branch
+
+git checkout
