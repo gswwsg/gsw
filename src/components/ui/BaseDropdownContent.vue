@@ -1,6 +1,6 @@
 <template>
   <div v-if="active">
-    <select multiple="true" class="select-css">
+    <select multiple="true">
       <base-dropdown-item
         v-for="bot in regbots"
         :key="bot.id"
@@ -21,6 +21,7 @@ export default {
         { id: 2, value: "bot2" },
         { id: 3, value: "bot3" },
       ],
+      selected: true,
     };
   },
   inject: ["sharedState"],
@@ -29,11 +30,16 @@ export default {
       return this.sharedState.active;
     },
   },
+  methods: {
+    isSelected() {
+      return (this.selected = !this.selected);
+    },
+  },
 };
 </script>
 
 <style scoped>
-.select-css {
+/* .select-css {
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
@@ -45,5 +51,5 @@ export default {
   border: 0px solid white;
   box-shadow: 0 0px 0 0px white;
   border-radius: 0em;
-}
+ }}*/
 </style>

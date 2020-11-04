@@ -1,10 +1,10 @@
 <template>
-  <div @click="toggle">
+  <div >
     <slot name="toggler">
-      <base-button>click</base-button>
+      <base-button @click="toggle">click</base-button>
     </slot>
-    <slot>
-      
+    <slot >
+      <base-button @click="toggle">click</base-button>
     </slot>
   </div>
 </template>
@@ -16,18 +16,18 @@
     provide () {
       return {
         sharedState: this.sharedState
-      }
+      };
     },
     data () {
       return {
         sharedState: {
-          active: true
+          active: false
         }
-      }
+      };
     },
     methods: {
       toggle () {
-        this.sharedState.active = true;
+        this.sharedState.active = !this.sharedState.active;
       }
     }
   }

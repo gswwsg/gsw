@@ -1,5 +1,5 @@
 <template>
-<option class="option-css">{{ value }}</option>
+<option  value="{{value}}">{{ value }}</option>
 </template>
 
 <script>
