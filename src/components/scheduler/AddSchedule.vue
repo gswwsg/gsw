@@ -13,7 +13,9 @@
           />
         </div>
        <base-dropdown id="bots" list="bots">
+          <template v-slot:toggler>
           <label for="selectedBot">Select a bot</label>
+          </template>
           <base-dropdown-content>
           </base-dropdown-content>
        </base-dropdown> 

@@ -1,6 +1,6 @@
 <template>
   <div v-if="active">
-    <select multiple="true" class="select-css bloc">
+    <select multiple="true" class="select-css">
       <base-dropdown-item
         v-for="bot in regbots"
         :key="bot.id"
@@ -33,13 +33,6 @@ export default {
 </script>
 
 <style scoped>
-.bloc {
-}
-
-.bloc select {
-  padding: 10px;
-  margin: -5px -20px -5px -5px;
-}
 .select-css {
   display: inline-block;
   vertical-align: top;

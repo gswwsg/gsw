@@ -1,7 +1,7 @@
 <template>
   <div @click="toggle">
     <slot name="toggler">
-      <base-button>{{list}}</base-button>
+      <base-button>click</base-button>
     </slot>
     <slot>
       
@@ -21,13 +21,13 @@
     data () {
       return {
         sharedState: {
-          active: false
+          active: true
         }
       }
     },
     methods: {
       toggle () {
-        this.sharedState.active = !this.sharedState.active
+        this.sharedState.active = true;
       }
     }
   }
