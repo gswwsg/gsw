@@ -2,22 +2,25 @@
   <div>
     <!--   <img alt="Vue logo" src="./assets/logo.png" /> -->
     <the-header title="gsw"></the-header>
-    <add-schedule></add-schedule>
-    <the-container></the-container>
+<!--     <add-schedule></add-schedule>
+    <the-container></the-container> -->
+    <the-scrap></the-scrap>
 
   </div>
 </template>
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
-import TheContainer from "./components/containers/TheContainer.vue";
-import AddSchedule from "./components/scheduler/AddSchedule.vue";
+/* import TheContainer from "./components/containers/TheContainer.vue";
+import AddSchedule from "./components/scheduler/AddSchedule.vue"; */
+import TheScrap from "./components/scheduler/TheScrap.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
-    TheContainer,
-    AddSchedule,
+  /*     TheContainer,
+    AddSchedule, */
+    TheScrap,
   },
 };
 </script>

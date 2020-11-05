@@ -12,6 +12,9 @@
             v-model.trim="scheduleName"
           />
         </div>
+        <div>
+          <base-dd></base-dd>
+        </div>
        <base-dropdown id="bots" list="bots">
           <template v-slot:toggler>
           <label for="selectedBot">Select a bot</label>
