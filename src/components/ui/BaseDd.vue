@@ -1,10 +1,10 @@
 <template>
   <div class="select-box">
-      <div class="select-box__current" tabindex="1">
-      <base-dd-content> </base-dd-content>
-      </div>
+    <div class="select-box__current" tabindex="1">
+      <base-dd-content :name="listname" :ddcontent="ddlist"> </base-dd-content>
+    </div>
     <ul class="select-box__list">
-      <base-list-content></base-list-content>
+      <base-list-content :name="listname" :ddcontent="ddlist"></base-list-content>
     </ul>
   </div>
 </template>
@@ -12,11 +12,18 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      
+    };
   },
-  props: {},
+  props: {
+    ddlist: Array,
+    listname: String
+  },
   methods: {},
-  computed: {},
+  computed: {
+    
+  },
 };
 </script>
 
@@ -69,18 +76,10 @@ export default {
   opacity: 0.3;
   transition: 0.2s ease;
 }
-.select-box__option {
-  display: block;
-  padding: 15px;
-  background-color: #fff;
-}
-.select-box__option:hover,
-.select-box__option:focus {
-  color: #546c84;
-  background-color: #fbfbfb;
-}
+
 .select-box__list {
   position: absolute;
+  left: 0; top: 100%;
   width: 100%;
   padding: 0;
   list-style: none;

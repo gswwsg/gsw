@@ -1,5 +1,5 @@
 <template>
-  <base-dd-item v-for="bot in arr_bots" :key="bot.id" :id="bot.id" :value="bot.value">
+  <base-dd-item :listname=name v-for="item in ddcontent" :key="item.id" :id="item.id" :value="item.value" :checked="item.checked">
   </base-dd-item>
 </template>
 
@@ -7,12 +7,18 @@
 export default {
   data() {
     return {
-      arr_bots: [
-        { id: 1, value: "bot1" },
-        { id: 2, value: "bot2" },
-        { id: 3, value: "bot3" },
-      ],
+      
     };
   },
+  props: {
+    ddcontent: Array,
+    name: String
+  },
+  computed: {
+     check() {
+       return  true;
+  },
+  }
+  
 };
 </script>

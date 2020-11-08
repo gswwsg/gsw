@@ -5,16 +5,29 @@
       type="radio"
       :id="id"
       :value="id"
-      name="Ben"
-      checked="checked"
+      :name="listname"
+      :checked="checked"
     />
-      <p class="select-box__input-text">{{ value }}</p>
+      <span class="select-box__input-text">{{ value }}</span>
   </div>
 </template>
 
 <script>
 export default {
-props: ['id', 'value'],
+props: ['listname', 'id', 'value', 'checked'],
+methods: {
+  isChecked (id) {
+    if(id === 1){
+      console.log('im in ischecked');
+      console.log("checked");
+      return "checked";
+    } else {
+
+      console.log('false')
+    }
+
+  }
+}
 }
 </script>
 <style scoped>
