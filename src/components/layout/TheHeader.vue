@@ -1,27 +1,34 @@
 <template>
-   <header>
-       <h1>{{ title }}</h1>
-   </header>
+  <header>
+    <div>
+      <a href="index.html" class="main-header__brand"> {{ title }} </a>
+    </div>
+    <the-nav-bar></the-nav-bar>
+  </header>
 </template>
 
 <script>
+
+import TheNavBar from './TheNavBar.vue';
+
 export default {
-    props: ['title']
-}
+  components:{ 
+    TheNavBar,
+  },
+  props: ["title"],
+};
 </script>
 
 <style scoped>
-header {
+.main-header {
   width: 100%;
-  height: 5rem;
-  background-color: whitesmoke;
-  display: flex;
+  background: whitesmoke;
+  padding: 8px 16px;
   justify-content: left;
   align-items: center;
 }
-
-header h1 {
-  color: grey;
-  margin: 0;
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
 }
 </style>

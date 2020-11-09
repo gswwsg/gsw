@@ -90,6 +90,8 @@ export default {
   animation-fill-mode: forwards;
   animation-timing-function: step-start;
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  margin:0;
+  z-index: 100;
 }
 
 @keyframes HideList {
