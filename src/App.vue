@@ -4,8 +4,10 @@
     <the-header title="gsw"></the-header>
 <!--     <add-schedule></add-schedule>
     <the-container></the-container> -->
-    <the-scrap></the-scrap>
-
+    <div>
+<p></p>
+    <new-schedule></new-schedule>
+</div>
   </div>
 </template>
 <script>
@@ -14,6 +16,7 @@ import TheHeader from "./components/layout/TheHeader.vue";
 import AddSchedule from "./components/scheduler/AddSchedule.vue"; */
 import TheScrap from "./components/scheduler/TheScrap.vue";
 
+import NewSchedule from "./components/scheduler/NewSchedule.vue";
 export default {
   name: "App",
   components: {
@@ -21,6 +24,7 @@ export default {
   /*     TheContainer,
     AddSchedule, */
     TheScrap,
+    NewSchedule,
   },
 };
 </script>
@@ -32,6 +36,7 @@ export default {
 }
 html {
   font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.15;
 }
 body {
   margin: 0;

@@ -1,12 +1,13 @@
 <template>
-  <aside>
-    <section></section>
-  </aside>
+   <aside>footer</aside> 
 </template>
 
 <script>
-export default {};
+export default {
+    
+}
 </script>
 
 <style scoped>
+
 </style>

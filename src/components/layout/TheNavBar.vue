@@ -24,7 +24,7 @@
   left: 0;
   top: 0;
   margin: 0;
-  border: 5px solid red;
+  border: 5px solid purple;
 }
 
 .main-nav__items {
