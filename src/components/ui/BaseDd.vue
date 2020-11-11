@@ -30,13 +30,13 @@ export default {
 <style scoped>
 .select-box {
   position: relative;
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 10%;
   margin: 0 auto;
   font-size: 18px;
   color: #60666d;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .select-box {
     width: 70%;
   }
@@ -50,7 +50,7 @@ export default {
   .select-box {
     width: 30%;
   }
-}
+} */
 .select-box__current {
   position: relative;
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);

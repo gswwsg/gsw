@@ -20,8 +20,14 @@
 
       <div class="form-field">
         <label class="field-label">Select a bot</label>
-        <div class="menu tranisition">
-          <base-dd listname="months" :ddlist="$store.state.months"></base-dd>
+        <div class="menu">
+          <base-dd listname="bots" :ddlist="$store.state.bots"></base-dd>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="field-label">Select a host</label>
+        <div class="menu">
+          <base-dd listname="hosts" :ddlist="$store.state.hosts"></base-dd>
         </div>
       </div>
     </div>
@@ -31,5 +37,25 @@
 <style scoped>
 .schedule-slider-container {
     position: relative;
+
 }
+.schedule-content-container {
+    position: relative;
+}
+
+.form-field,
+.button-group {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+.field-input {
+  display: inline;
+  padding-left: 10px;
+}
+.menu {
+    position: relative;
+    display: inline;
+}
+
 </style>

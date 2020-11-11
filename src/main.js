@@ -28,12 +28,12 @@ const store = createStore({
         { id: "7-d", value: "SUN" },
       ],
       bots: [
-        { id: 1, value: "bot1" },
-        { id: 2, value: "bot2" },
-        { id: 3, value: "bot3" },
+        { id: "1-b", value: "bot1", checked: "checked" },
+        { id: "2-b", value: "bot2" },
+        { id: "3-b", value: "bot3" },
       ],
       hosts: [
-        { id: 1, value: "host1" },
+        { id: 1, value: "host1", checked: "checked"},
         { id: 2, value: "host2" },
         { id: 3, value: "host3" },
       ],

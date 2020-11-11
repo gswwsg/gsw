@@ -2,12 +2,13 @@
   <div>
     <!--   <img alt="Vue logo" src="./assets/logo.png" /> -->
     <the-header title="gsw"></the-header>
-<!--     <add-schedule></add-schedule>
+    <!--     <add-schedule></add-schedule>
     <the-container></the-container> -->
     <div>
-<p></p>
-    <new-schedule></new-schedule>
-</div>
+      <p></p>
+      <new-schedule></new-schedule>
+      <the-scrap></the-scrap>
+    </div>
   </div>
 </template>
 <script>
@@ -21,7 +22,7 @@ export default {
   name: "App",
   components: {
     TheHeader,
-  /*     TheContainer,
+    /*     TheContainer,
     AddSchedule, */
     TheScrap,
     NewSchedule,
@@ -42,5 +43,4 @@ body {
   margin: 0;
   background-color: white;
 }
-
 </style>
