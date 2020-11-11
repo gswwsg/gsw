@@ -30,3 +30,10 @@ npm install vue-multiselect --save
 git branch
 
 git checkout
+
+git stash --include-untracked
+
+ git reset --hard
+ git clean -fd
+
+ git pull
