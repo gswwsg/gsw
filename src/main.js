@@ -13,6 +13,7 @@ import BaseDdContent from "./components/ui/BaseDdContent.vue";
 import BaseDdItem from "./components/ui/BaseDdItem.vue";
 import BaseListItem from "./components/ui/BaseListItem.vue";
 import BaseListContent from "./components/ui/BaseListContent.vue";
+import BaseInput from "./components/ui/BaseInput.vue";
 
 const app = createApp(App);
 const store = createStore({
@@ -33,9 +34,9 @@ const store = createStore({
         { id: "3-b", value: "bot3" },
       ],
       hosts: [
-        { id: 1, value: "host1", checked: "checked"},
-        { id: 2, value: "host2" },
-        { id: 3, value: "host3" },
+        { id: "1-h", value: "host1", checked: "checked"},
+        { id: "2-h", value: "host2" },
+        { id: "3-h", value: "host3" },
       ],
       months: [
         { id: 1, value: "JAN", checked: "checked"},
@@ -46,6 +47,21 @@ const store = createStore({
         { id: 6, value: "JUN" },
         { id: 7, value: "JUL" },
       ],
+      retries: [
+        { id: "1-r", value: "1", checked: "checked"},
+        { id: "2-r", value: "2"},
+        { id: "3-r", value: "3"},
+      ],
+      priority: [
+        { id: "1-p", value: "1", checked: "checked"},
+        { id: "2-p", value: "2"},
+        { id: "3-p", value: "3"},
+      ],
+      timezone: [
+        { id: "1-t", value: "GMT", checked: "checked"},
+        { id: "2-t", value: "CET"},
+        { id: "3-t", value: "UTC"},
+      ]
     };
   },
 });
@@ -62,4 +78,5 @@ app.component("base-dropdown-item", BaseDropdownItem);
 app.component("base-button", BaseButton);
 app.component("base-dialog", BaseDialog);
 app.component("base-card", BaseCard);
+app.component("base-input", BaseInput);
 app.mount("#app");

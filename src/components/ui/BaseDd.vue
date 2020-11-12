@@ -2,9 +2,18 @@
   <div class="select-box">
     <div class="select-box__current" tabindex="1">
       <base-dd-content :name="listname" :ddcontent="ddlist"> </base-dd-content>
+      <img
+        class="select-box__icon"
+        src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
+        alt="Arrow Icon"
+        aria-hidden="true"
+      />
     </div>
     <ul class="select-box__list">
-      <base-list-content :name="listname" :ddcontent="ddlist"></base-list-content>
+      <base-list-content
+        :name="listname"
+        :ddcontent="ddlist"
+      ></base-list-content>
     </ul>
   </div>
 </template>
@@ -12,30 +21,23 @@
 <script>
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   props: {
     ddlist: Array,
-    listname: String
+    listname: String,
   },
   methods: {},
-  computed: {
-    
-  },
+  computed: {},
 };
 </script>
 
 <style scoped>
 .select-box {
-  position: relative;
   display: inline-block;
-  width: 10%;
-  margin: 0 auto;
-  font-size: 18px;
-  color: #60666d;
+  position: relative;
 }
+
 /* @media (min-width: 768px) {
   .select-box {
     width: 70%;
@@ -53,13 +55,25 @@ export default {
 } */
 .select-box__current {
   position: relative;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   outline: none;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  padding: 8px;
+  width: 250px;
+}
+.select-box__current:hover 
+{
+outline: none;
+ border: 1px solid rgba(0, 0, 0, 0.25)
 }
 .select-box__current:focus + .select-box__list {
   opacity: 1;
   animation-name: none;
+  outline: none;
+  border: 1.5px solid rgb(24, 144, 255);
+  background-color: #fff;
 }
 .select-box__current:focus + .select-box__list .select-box__option {
   cursor: pointer;
@@ -79,7 +93,8 @@ export default {
 
 .select-box__list {
   position: absolute;
-  left: 0; top: 100%;
+  left: 0;
+  top: 100%;
   width: 100%;
   padding: 0;
   list-style: none;
@@ -90,7 +105,7 @@ export default {
   animation-fill-mode: forwards;
   animation-timing-function: step-start;
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-  margin:0;
+  margin: 0;
   z-index: 100;
 }
 

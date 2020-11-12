@@ -7,7 +7,9 @@
     <div>
       <p></p>
       <new-schedule></new-schedule>
+      <p></p>
       <the-scrap></the-scrap>
+      <stored-actions></stored-actions>
     </div>
   </div>
 </template>
@@ -16,8 +18,8 @@ import TheHeader from "./components/layout/TheHeader.vue";
 /* import TheContainer from "./components/containers/TheContainer.vue";
 import AddSchedule from "./components/scheduler/AddSchedule.vue"; */
 import TheScrap from "./components/scheduler/TheScrap.vue";
-
 import NewSchedule from "./components/scheduler/NewSchedule.vue";
+import StoredActions from "./components/actions/StoredActions.vue";
 export default {
   name: "App",
   components: {
@@ -26,6 +28,7 @@ export default {
     AddSchedule, */
     TheScrap,
     NewSchedule,
+    StoredActions,
   },
 };
 </script>
