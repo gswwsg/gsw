@@ -4,12 +4,18 @@
     <the-header title="gsw"></the-header>
     <!--     <add-schedule></add-schedule>
     <the-container></the-container> -->
-    <div>
+      <base-card>
+        <user-auth></user-auth>
+      </base-card>
+    <div v-if="isAuth">
+      <base-card>
+        <new-schedule></new-schedule>
+      </base-card>
       <p></p>
-      <new-schedule></new-schedule>
-      <p></p>
-      <the-scrap></the-scrap>
-      <stored-actions></stored-actions>
+      <base-card>
+        <the-scrap></the-scrap>
+        <stored-actions></stored-actions>
+      </base-card>
     </div>
   </div>
 </template>
@@ -20,6 +26,8 @@ import AddSchedule from "./components/scheduler/AddSchedule.vue"; */
 import TheScrap from "./components/scheduler/TheScrap.vue";
 import NewSchedule from "./components/scheduler/NewSchedule.vue";
 import StoredActions from "./components/actions/StoredActions.vue";
+import UserAuth from "./components/actions/UserAuth.vue";
+import BaseCard from "./components/ui/BaseCard.vue";
 export default {
   name: "App",
   components: {
@@ -29,6 +37,13 @@ export default {
     TheScrap,
     NewSchedule,
     StoredActions,
+    UserAuth,
+    BaseCard,
+  },
+  computed: {
+    isAuth() {
+      return this.$store.getters.userIsAuthenticated;
+    },
   },
 };
 </script>

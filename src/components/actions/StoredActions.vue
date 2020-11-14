@@ -7,7 +7,6 @@
         <button @click="removeFile(file)">Remove</button>
         </li>
     </div>
-    {{ message }}
   </div>
 
   And then add this styles in the head tag:
