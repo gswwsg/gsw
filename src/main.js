@@ -61,7 +61,8 @@ const store = createStore({
         { id: "1-t", value: "GMT", checked: "checked"},
         { id: "2-t", value: "CET"},
         { id: "3-t", value: "UTC"},
-      ]
+      ],
+      isLoggedIn: false
     };
   },
 });
